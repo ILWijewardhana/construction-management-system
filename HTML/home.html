@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Home | Nova Constructions</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../JS/slideshow.js"></script>
+  </head>
+
+  <body>
+    <img src="../images/logo.png" id="logo" alt="company logo">
+    <img src="../images/title.png" id="title" alt="company title">
+    <img src="../images/profileImage.png" id="pImg" alt="profile image"><br>
+    <a href="register.html"><img src="../images/signup.png" id="signup" alt="signup button"></a>
+    <a href="Login option.html"><img src="../images/signin.png" id="signin" alt="signin button"></a>
+
+    <div class="navBarDiv">
+      <ul class = "nav">
+        <li class="current"><a href = "home.html">Home</a></li>
+        <li><a href = "aboutUs.html">Who we are</a></li>
+        <li><a href = "whatWeDo.html">What we do</a></li>
+        <li><a href = "contactUs.html">Contact Us</a></li>
+        <li><a href = "ourWork.html">Our Work</a></li>
+      </ul>
+
+      <div class="search">
+        <form style="height: 100%;" onsubmit="return false">
+          <input type="search" placeholder="Search in our website..." id="searchBar" onsearch="search()">
+          <img src="../images/search.png"> 
+          <script src="../JS/searchBar.js"></script>
+          <input type="submit" id="searchSubmit">
+        </form>
+      </div>
+
+      <img src="../images/lightMode.png" alt="sunImage" id="theme">
+      <script src="../JS/darkMode.js"></script>
+
+    </div>
+    
+    <div class="slideshow">
+      <img id="slide">
+      <script>
+          window.onload = changeImg();
+      </script>
+  </div>
+    <div class="intro">
+      <h1>
+        Nova Constructions is a Company Like no Other!
+      </h1>
+      <p>
+        It's a company that represents more than half a century of hard work, exceptional quality, innovative thinking, competitive decisions and the strong desire to drive the economy, while leaving a lasting legacy. Their tremendous philanthropic contributions to the wider community are legendary and the fierce loyalty they inspire in their employees is a true testament to the vision of the company and on that is unparalleled in any industry.
+        <br><br>
+        In 2006, Nova Constructions announced its return to the world of racing, with the grand reopening the Riverside International Speedway. The entire track was refurbished to make it not just the best track in Canada, but one of the best short tracks in the world. Nova Construction provided a world-class racing facility, the only NASCAR sanctioned track east of Quebec and put Nova Scotia on the motorsport map.
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0380742816697!2d79.95842747588114!3d6.886042993112947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250d92e544f27%3A0xb13154cbbe3ee026!2sNova%20Engineering%20Solutions%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1695817842981!5m2!1sen!2slk" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+      <div id="downloadApp">
+        <h2>
+          Download Our Mobile Application
+        </h2>
+        <a href="https://www.apple.com/app-store/" target="_blank"><img src="../images/appstore.png" class="appstore"></a>
+        <a href="https://play.google.com/store/games?device=phone" target="_blank"><img src="../images/playstore.png" class="playstore"></a>
+      </div>
+    </div>
+    <div id="services">
+      <h1>
+        OUR SERVICES
+      </h1>
+      <img src="../images/servicesHomeImage.jpeg">
+      <p>
+        Nova Construction Ltd. offers diverse commercial and residential services, including aggregates, asphalt, bridges, concrete, earthmoving, and road construction.
+      </p>
+      <a href="https://cmsegypt.net/?page_id=5946" style="text-decoration: none;" target="_blank"><button>Read More</button></a><!--hyperlink taken from "https://cmsegypt.net/"-->
+    </div>
+
+    <div id="projects">
+      <h1>
+        OUR PROJECTS
+      </h1>
+      <img src="../images/projectsHomeImage.jpeg">
+      <p>
+        Explore Nova Construction Ltd's diverse projects: heavy construction, roads, &nbsp;bridges, site clearing, earthmoving. See photos showcasing their past and ongoing work.
+      </p>
+      <a href="https://cmsegypt.net/?page_id=6069" style="text-decoration: none;" target="_blank"><button>Read More</button></a><!--hyperlink taken from "https://cmsegypt.net/"-->
+    </div><br>
+
+    <footer>
+      <table width="30%" class="footerTable">
+        <tr>
+          <td width="20%">Contact Us,</td>
+          <td width="10%"><img src="../images/email.png" width="80%"></td>
+          <td style="white-space:nowrap; text-align: left;">novaconstructions@gmail.com</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><img src="../images/phone.png" width="55%"></td>
+          <td style="text-align: left;">+94 (70) 123 4567</td>
+        </tr>
+      </table><br>
+  
+      <table width="30%" class="footerTable footerTableHover">
+        <tr>
+          <td>Follow Us On,</td>
+          <td width="10%"><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" class="fb"></a></td>
+          <td width="10%"><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" class="insta"></a></td>
+          <td width="10%"><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" class="yt"></a></td>
+          <td width="10%"><a href="https://www.tiktok.com/en/" target="_blank"><img src="../images/tiktok.png" class="tiktok"></a></td>
+          <td width="60%"></td>
+        </tr>
+      </table><br>
+  
+      <div class="address">
+        <h2>NOVA Constructions (pvt) Ltd</h2>
+        <p>Street: 568 Havelock Road,<br>06th Lane, Colombo</p>
+      </div>
+  
+      <div class="hyperLinks">
+        <p>
+          <a href="aboutUs.html">About Us</a> |
+          <a href="contactUs.html">Contact Us</a> |
+          <a href="FAQ.html">FAQ</a> |
+          <a href="customerSupport.html">Customer Support</a> |
+          <a href="feedback.php">Customer Feedback</a>
+        </p>
+      </div>
+  
+      <div class="bottomLogo">
+        <img src="../images/logo.png">
+        <p>&copy; 2023 NOVA Constructions. All rights reserved.</p>
+      </div>
+  
+    </footer>
+  </body>
+</html>

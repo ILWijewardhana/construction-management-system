@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+/* body */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-color);
+  transition: 1s;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+p:hover, h1:hover, h2:hover, li:hover, td:hover {
+  cursor: default;
+}
+
+/* fonts */ 
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dark mode */
+/* made with the help of this video "https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=107s" */
+
+:root{
+  --primary-color: #e3e3e3;
+  --secondary-color: #212121;
+}
+.darkTheme {
+  --primary-color: #212121;
+  --secondary-color: #e3e3e3;
+}
+#theme {
+  width: 2.5vw;
+  position: absolute;
+  right: .5%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: .2%;
+  cursor: pointer;
+}
+
+/* header */
+
+#logo {
+  margin: 1.1%;
+  position: absolute;
+  width: 6vw;
+}
+#title {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 23%;
+  margin-right: auto;
+  width: 50%;
+  filter: drop-shadow(0px 0px 2px #212121);
+}
+#pImg {
+  margin-right: 4.5%;
+  width: 4%;
+  float: right;
+}
+#signin {
+  margin-left: 94%;
+  width: 5%;
+}
+#signup {
+  position: absolute;
+  margin-left: 88.2%;  
+  width: 5%;
+}
+#signup:hover, #signin:hover {
+  transition: .4s;
+  transform: scale(105%);
+  filter: drop-shadow(0px 0px 3px var(--secondary-color));
+}
+
+/* navigation bar */
+
+.navBarDiv {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  border-top: .1vw solid var(--secondary-color);
+  border-bottom: .1vw solid var(--secondary-color);
+}
+
+.nav {
+  position: absolute;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav li {
+  padding-right: 3px;
+  float: left;
+  
+}
+.nav li a {
+display: block;
+color: var(--secondary-color);
+text-align: center;
+  padding: 1vw 1vw;
+text-decoration: none;
+  transition: 0.7s;
+  font-family: "Verdana", sans-serif;
+  font-size: 1vw;
+}
+.nav li a:hover {
+  background-color: #adadad;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.nav .current {
+  font-weight: bold;
+  font-size: 120%;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  transition: 1s;
+  text-decoration-thickness: 2px;
+}
+
+/* search bar */
+
+.search {
+  position: relative;
+  width: 14vw;
+  height: 4vh;
+  right: 4%;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+.search input {
+  position: relative;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding-left: 12%;
+  width: 100%;
+  height: 100%;
+  font-size: 1vw;
+  transition: 1s;
+  color: var(--secondary-color);
+}
+.search input::placeholder {
+  color: grey;
+  font-size: .9vw;
+}
+.search input::-ms-input-placeholder {
+  color: grey;
+}
+.search img {
+  width: .9vw;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search input[type=submit] {
+  visibility: hidden;
+}
+
+/* registration form */
+#register {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  width: 70%;
+  height: 100vh;
+  position: relative;
+  margin-top: 4%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 1s;
+}
+#register h1 {
+  font-size: 3vw;
+  text-align: center;
+  color: var(--secondary-color);
+  transition: 1s;
+}
+  .fnameLable, .lnameLable, .GenderLable,.AddressLable,.CountryLable,.NumberLable,.Email,.Password,.Rpassword{
+  margin-left: 5%;
+  font-size: 1.3vw;
+  color: var(--secondary-color);
+  transition: 1s;
+}
+.dateLable {
+  margin-left: 5.5%;
+  font-size: 1.4vw;
+  color: var(--secondary-color);
+  transition: 1s;
+}
+.terms {
+  border: 1px solid black;
+}
+
+#fName, #lName, #gender, #date, #month, #year,#address,#country,#number,#email,#password,#rPassword{
+  background-color: transparent;
+  transition: 1s;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 1.2vw; 
+  padding: 1.2%;
+}
+#gender{
+  margin-left: 3%;
+  width: 22.5vw;
+  color: var(--secondary-color);
+}
+
+/* create a DOC */
+#date {
+  margin-left: 4%;
+}
+#date, #month {
+  width: 9%;
+  color: var(--secondary-color);
+}
+#year {
+  width: 10%;
+  color: var(--secondary-color);
+}  
+#address{
+  margin-left: 2.5%;
+}
+#country{
+  margin-left: 2%;
+}
+#number {
+  margin-left: .8%;
+}
+#email{
+  margin-left: 3.5%; 
+}
+#password{
+  margin-left: 1%; 
+}
+#rpassword{
+  margin-left: 0.5%; 
+}
+#termsbox{
+    background-color: var(--primary-color);
+    transition: 1s;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    width: 3vw;
+    height: 3vh;
+    top: 40%;
+    margin-left: 30%;
+}
+#checkbox2{
+  background-color: var(--primary-color);
+  transition: 1s;
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  width: 3vw;
+  height: 3vh;
+  top: 40%;
+  margin-left: 30%;
+}
+
+/* Creat a button */
+#creat{
+  background-color: gray;
+  position: absolute;
+  transition: 1s;
+  color: var(--secondary-color);
+  margin-top: 6%;
+  width: 9vw;
+  height: 6vh;
+  border-style: none;
+  border-radius: 15px;
+  font-size: 1.2vw;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%);
+}
+#creat:hover {
+  transition: 0.5s;
+  filter: drop-shadow(0px 0px 3px var(--secondary-color));
+}
+/* sign-in account */
+.account{
+  position: absolute;
+  font-size: 1vw;
+  color: var(--secondary-color);
+  left: 35%;
+  margin-top: 10%;
+  font-size: 1.3vw;
+} 
+
+#sign{
+  position: absolute;
+  transition: none;
+  color:var(--secondary-color);
+  margin-top: 10%;
+  left: 58%;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+#sign:hover {
+  font-weight: bold;
+  transition: none;
+}
+
+/* footer */
+
+footer {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px 5px 0px 5px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 4.5vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: #a3a3a3;
+  }
+  .footerTable td {
+    font-size: 105%;
+    font-size: 1vw;
+  }
+  .footerTable tr td {
+    text-align: center;
+  }
+  .footerTable td:first-child {
+    width: 1%;
+    white-space: nowrap;
+  }
+  .socials {
+    position: absolute;
+    margin-top: -2.1%;
+    margin-left: 4%;
+  }
+  .fb {
+    margin-top: 10%;
+    width: 70%;
+    border-radius: 5px;
+  }
+  .insta {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .yt {
+    margin-top: 10%;
+    width: 80%;
+  }
+  .tiktok {
+    margin-top: 10%;
+    width: 70%;
+    border-radius: 5px;
+  }
+  .footerTableHover img:hover {
+    transform: scale(110%);
+    filter: drop-shadow(0px 0px 1px #000);
+  }
+  .address {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .address h2 {
+    margin-top: 10%;
+    font-size: 1.2vw;
+  }
+  .address p {
+    font-size: 1vw;
+  }
+  .hyperLinks {
+    position: absolute;
+    font-size: .8vw;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hyperLinks p a {
+    text-decoration: none;
+    color: #737373;
+  }
+  .hyperLinks p a:hover {
+    color: #000;
+  }
+  .bottomLogo {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    width: 15vw;
+    height: fit-content;
+    top: 50%;
+    transform: translate(0, -45%);
+  }
+  .bottomLogo img {
+    position: relative;
+    width: 40%;
+    bottom: 30%;
+    left: 30%;
+  }
+  .bottomLogo p {
+    position: relative;
+    font-size: .7vw;
+    text-align: center;
+    top: 72%;
+  }

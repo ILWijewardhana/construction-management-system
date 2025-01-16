@@ -1,0 +1,676 @@
+@charset "UTF-8";
+
+/* body */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-color);
+  transition: 1s;
+  overflow-x: hidden;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+p:hover, h1:hover, h2:hover, li:hover, td:hover {
+  cursor: default;
+}
+
+/* fonts */ 
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dark mode */
+/* made with the help of this video "https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=107s" */
+
+:root{
+  --primary-color: #e3e3e3;
+  --secondary-color: #212121;
+}
+.darkTheme {
+  --primary-color: #212121;
+  --secondary-color: #e3e3e3;
+}
+#theme {
+  width: 2.5vw;
+  position: absolute;
+  right: .5%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: .2%;
+  cursor: pointer;
+}
+
+/* header */
+
+#logo {
+  margin: 1.1%;
+  position: absolute;
+  width: 6vw;
+}
+#title {
+  position: relative;
+  margin-top: 1%;
+  margin-left: 23%;
+  margin-right: auto;
+  width: 50%;
+  filter: drop-shadow(0px 0px 2px #212121);
+}
+.Aname {
+  width: 10%;
+  height: 13vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#pImg {
+  position: relative;
+  width: 40%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.Aname h3{
+  font-size: 1vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
+}
+
+/* navigation bar */
+
+.navBarDiv {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  border-top: .1vw solid var(--secondary-color);
+  border-bottom: .1vw solid var(--secondary-color);
+}
+
+.nav {
+  position: absolute;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav li {
+  padding-right: 3px;
+  float: left;
+  
+}
+.nav li a {
+display: block;
+color: var(--secondary-color);
+text-align: center;
+  padding: 1vw 1vw;
+text-decoration: none;
+  transition: 0.7s;
+  font-family: "Verdana", sans-serif;
+  font-size: 1vw;
+}
+.nav li a:hover {
+  background-color: #adadad;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.nav .current {
+  font-weight: bold;
+  font-size: 120%;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  transition: 1s;
+  text-decoration-thickness: 2px;
+}
+
+/* search bar */
+
+.search {
+  position: relative;
+  width: 14vw;
+  height: 4vh;
+  right: 4%;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+.search input {
+  position: relative;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding-left: 12%;
+  width: 100%;
+  height: 100%;
+  font-size: 1vw;
+  transition: 1s;
+  color: var(--secondary-color);
+}
+.search input::placeholder {
+  color: grey;
+  font-size: .9vw;
+}
+.search input::-ms-input-placeholder {
+  color: grey;
+}
+.search img {
+  width: .9vw;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search input[type=submit] {
+  visibility: hidden;
+}
+
+
+
+/* Admin div */
+
+#admin {
+  position: relative;
+  margin-top: 4%;
+  width: 20vw;
+  height: fit-content;
+  border: 2px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-radius: 15px;
+  padding-bottom: 3%;
+  transform: translate(-50%);
+  justify-content: left;
+  left: 13%;
+}
+
+#admin h2 {
+  font-size: 1.5vw;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
+  padding-top: 1%;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-radius: 10px;
+  border-top: none;
+  border-left: none;
+  border-right:none;
+  padding-bottom: 3%;
+  
+}
+
+.alogoutp {
+  position: absolute;
+  margin-left: 78%;
+  padding: 1% 2%;
+  border-radius: 5vw;
+  border: none;
+  font-size: 1vw;
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+  transition: 1s;
+  margin-top:-16%;
+}
+.alogoutp:hover {
+  filter: drop-shadow(0 0 3px #000);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.apf{
+  position: relative;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  
+}
+#admin h4{
+	position:absolute;
+	color: var(--secondary-color);
+	left:3%;
+	font-size: 1.1vw;
+}
+#admin hr{
+	height:1.5px;
+	width:30%;
+	margin-left:0%;
+	margin-top:17%;
+	background-color: var(--secondary-color);
+	
+}
+#admin textarea {
+  position: relative;
+  font-size: 1vw;
+  padding: 2%;
+  width: 95%;
+  height: 16vh;
+  background-color: transparent;
+  color: var(--secondary-color);
+  top:50%;
+  border-radius:10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.updateBTN, .deleteBTN {
+  padding: 1.5%;
+  border-radius: 1vw;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-size: .7vw;
+  font-weight: bold;
+  margin-top: 2%;
+  border: 1px solid var(--secondary-color);
+}
+.updateBTN:hover, .deleteBTN:hover{
+  background-color: grey;
+  color: var(--primary-color);
+}
+.updateBTN {
+  position: relative;
+  left: 50%;
+  transform: translate(-105%);
+}
+.deleteBTN {
+  float: right;
+  position: relative;
+  right: 50%;
+  transform: translate(105%);
+}
+
+/*charts*/
+.cons h2 {
+  font-size: 1.5vw;
+  color: var(--secondary-color);
+  margin-top:-29.5%;
+  margin-left:28%;
+}
+.cons hr{
+	height:1.5px;
+	width:70%;
+	margin-left:27%;
+	margin-top:-1%;
+	background-color: var(--secondary-color);
+	
+}
+
+.pchart1{
+  position: relative;
+  height:30vh;
+  width:12%;
+  margin-top:2%;
+  margin-left:28%;
+  border: 2px solid var(--secondary-color);
+  padding: 1vw 3vw 2vw 3vw;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  
+}
+.pchart1 h4 {
+  font-size: 1.1vw;
+  color: var(--secondary-color);
+  margin-top:-2%;
+  margin-left:-18%;
+}
+.pie1{width: 120%;
+  margin-top:5%;
+  margin-left:-10%;
+  border-radius: 10px;
+}
+.pchart2{
+  position: relative;
+  height:30vh;
+  width:12%;
+  margin-top:-17.7%;
+  margin-left:52.4%;
+  border: 2px solid var(--secondary-color);
+  padding: 1vw 3vw 2vw 3vw;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  
+}
+.pchart2 h4 {
+  font-size: 1.1vw;
+  color: var(--secondary-color);
+  margin-top:-2%;
+  margin-left:-18%;
+}
+
+.pie2{width: 115%;
+  margin-top:5%;
+  margin-left:-7%;
+  border-radius: 10px;
+}
+.pchart3{
+  position: relative;
+  height:30vh;
+  width:12%;
+  margin-top:-17.7%;
+  margin-left:77%;
+  border: 2px solid var(--secondary-color);
+  padding: 1vw 3vw 2vw 3vw;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  
+}
+.pchart3 h4 {
+  font-size: 1.1vw;
+  color: var(--secondary-color);
+  margin-top:-2%;
+  margin-left:-18%;
+}
+.pie3{width: 119%;
+  margin-top:3%;
+  margin-left:-7%;
+  border-radius: 10px;
+}
+.linechart{
+	position: relative;
+  height:35vh;
+  width:45%;
+  margin-top:3%;
+  margin-left:35%;
+  border: 2px solid var(--secondary-color);
+  padding: 1vw 3vw 2vw 3vw;
+  border-radius: 15px;
+  color: var(--secondary-color);
+}
+.linechart h4 {
+  font-size: 1.1vw;
+  color: var(--secondary-color);
+  margin-top:0%;
+  margin-left:-4%;
+}
+.linechar{
+  width: 110%;
+	height:95%;
+  margin-top:-1%;
+  margin-left:-5%;
+  border-radius: 10px;
+}
+.accountManage {
+  width: 98%;
+  position: relative;
+  left: 1%;
+  color: var(--secondary-color);
+}
+.accountManage hr {
+  width: 20%;
+  border: 2px solid black;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: -1%;
+  background-color: var(--secondary-color);
+  height: 3px;
+  border: none;
+}
+.accountManage button {
+  padding: .5%;
+  margin: .5%;
+  border-radius: 1vw;
+  font-size: 1vw;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+.accountManage button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/* manage
+.manage h2 {
+  font-size: 1.5vw;
+  color: var(--secondary-color);
+  margin-top:1%;
+  margin-left:1%;
+}
+.manage hr{
+	height:1.5px;
+	background-color: var(--secondary-color);
+	
+}
+
+update div
+
+.update {
+  position: relative;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 1px;
+  width: 17vw;
+  height: 30vh;
+  display: flex;
+  margin-left:13%;
+  transform: translate(-50%);
+  margin-top: 3%;
+}
+
+.o-username {
+  position: absolute;
+  top: 25%;
+  width: 16vw;
+  height: 12%;
+  border-radius: .7vw;
+  outline: none;
+  border: 2px solid var(--secondary-color);
+  font-size: 1vw;
+  padding: 1% 0 1% 1%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  left: 50%;
+  transform: translate(-50%);
+}
+.n-username {
+  position: absolute;
+  top: 50%;
+  height: 12%;
+  width: 16vw;
+  border-radius: .7vw;
+  outline: none;
+  border: 2px solid var(--secondary-color);
+  padding-left: 3%;
+  font-size: 1vw;
+  padding: 1% 0 1% 1%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.changeButton {
+  position: absolute;
+  bottom: 14%;
+  width: 60%;
+  height: 11%;
+  border-radius: 1vw;
+  font-size: 1vw;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  border-color: var(--secondary-color);
+  background-color: gray;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+.changeButton:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 7px var(--secondary-color));
+}
+deletion
+.deletion {
+  position: relative;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 1px;
+  width: 35vw;
+  height: 30vh;
+  display: flex;
+  margin-left:48%;
+  transform: translate(-50%);
+  margin-top: -14.7%;
+}
+.deletion h2 {
+	position:absolute;
+  font-size: 1.5vw;
+  color: var(--secondary-color);
+  margin-top:1%;
+  margin-left:1%;
+}
+.deletion hr{
+	height:0.2vh;
+	width:100vw;
+     margin-top:8%;
+	background-color: var(--secondary-color);
+	
+}
+
+.e-username {
+  position: absolute;
+  top: 50%;
+  width: 15vw;
+  height: 10%;
+  border-radius: .7vw;
+  outline: none;
+  left:2%;
+  border: 2px solid var(--secondary-color);
+  font-size: 1vw;
+  padding: 1% 0 1% 1%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+.ChangesButton {
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 14%;
+  border-radius: 1vw;
+  font-size: 1vw;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  border-color: var(--secondary-color);
+  background-color: gray;
+  left: 70%;
+  transform: translate(-50%);
+  
+}
+.ChangesButton:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 7px var(--secondary-color));
+} */
+
+
+/* footer */
+
+footer {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px 5px 0px 5px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 4.5vh;
+  overflow: hidden;
+  width: 100%;
+  background-color: #a3a3a3;
+}
+.footerTable td {
+  font-size: 105%;
+  font-size: 1vw;
+}
+.footerTable tr td {
+  text-align: center;
+}
+.footerTable td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+.socials {
+  position: absolute;
+  margin-top: -2.1%;
+  margin-left: 4%;
+}
+.fb {
+  margin-top: 10%;
+  width: 70%;
+  border-radius: 5px;
+}
+.insta {
+  margin-top: 10%;
+  width: 70%;
+}
+.yt {
+  margin-top: 10%;
+  width: 80%;
+}
+.tiktok {
+  margin-top: 10%;
+  width: 70%;
+  border-radius: 5px;
+}
+.footerTableHover img:hover {
+  transform: scale(110%);
+  filter: drop-shadow(0px 0px 1px #000);
+}
+.address {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.address h2 {
+  margin-top: 10%;
+  font-size: 1.2vw;
+}
+.address p {
+  font-size: 1vw;
+}
+.hyperLinks {
+  position: absolute;
+  font-size: .8vw;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hyperLinks p a {
+  text-decoration: none;
+  color: #737373;
+}
+.hyperLinks p a:hover {
+  color: #000;
+}
+.bottomLogo {
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  width: 15vw;
+  height: fit-content;
+  top: 50%;
+  transform: translate(0, -45%);
+}
+.bottomLogo img {
+  position: relative;
+  width: 40%;
+  bottom: 30%;
+  left: 30%;
+}
+.bottomLogo p {
+  position: relative;
+  font-size: .7vw;
+  text-align: center;
+  top: 72%;
+}

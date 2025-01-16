@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Login | Nova Constructions</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../JS/darkMode.js"></script>
+    <script src="../JS/prompts.js"></script>
+  </head>
+
+  <body>
+    <img src="../images/logo.png" id="logo" alt="company logo">
+    <img src="../images/title.png" id="title" alt="company title">
+    <img src="../images/profileImage.png" id="pImg" alt="profile image"><br>
+    <a href="register.html"><img src="../images/signup.png" id="signup" alt="signup button"></a>
+    <a href="Login option.html"><img src="../images/signin.png" id="signin" alt="signin button"></a>
+
+    <div class="navBarDiv">
+      <ul class = "nav">
+        <li><a href = "home.html">Home</a></li>
+        <li><a href = "aboutUs.html">Who we are</a></li>
+        <li><a href = "whatWeDo.html">What we do</a></li>
+        <li><a href = "contactUs.html">Contact Us</a></li>
+        <li><a href = "ourWork.html">Our Work</a></li>
+      </ul>
+
+      <div class="search">
+        <form style="height: 100%;" onsubmit="return false">
+          <input type="search" placeholder="Search in our website..." id="searchBar" onsearch="search()">
+          <img src="../images/search.png"> 
+          <script src="../JS/searchBar.js"></script>
+          <input type="submit" id="searchSubmit">
+        </form>
+      </div>
+
+      <img src="../images/lightMode.png" alt="sunImage" id="theme">
+      <script src="../JS/darkMode.js"></script>
+
+    </div>
+
+    <div id="UserLogin">
+      <h1>Log in</h1>
+      <form method="post" action="login.php">
+        <input type="text" placeholder="E-MAIL" name="email" class="email" required>
+        <input type="password" placeholder="PASSWORD" name="password" class="password" required>
+        <div class="rememberAndForgot">
+          <input type="checkbox" id="remeberMeCheck"><label for="remeberMeCheck" class="rememberLabel">Remember Me</label>
+          <button type="button" id="forgot" onclick="userForgot()">Forgot Password?</button>
+        </div>
+        
+
+        <div class="captcha">
+          <input type="checkbox" id="captchaCheckbox" required><label for="captchaCheckbox">I'm not a robot</label>
+          <img src="../images/captcha.png" alt="captcha">
+        </div>
+
+        <input type="submit" value="login" id="login1">
+      </form>
+      
+      <a href="https://www.facebook.com/"><img src="../images/fb.png" id="facebookLogin"></a>
+      <a href="https://www.google.com/"><img src="../images/google.png" id="googleLogin"></a>
+      <p class="account">Still don't have an account? </p>
+      <a href="register.html"><p id="register">Register</p></a> 
+      <div class="tAndP">
+        <!--Terms and conditions taken from "https://test.io/"-->
+        <!--Privacy policy taken from "https://www.testing.com/"-->
+        <a href="https://test.io/terms-of-service" class="terms" target="_blank"><p>Terms & Conditions</a> | 
+        <a href="https://www.testing.com/privacy-policy/" class="pPolicy" target="_blank">Privacy Policy</p></a>
+      </div>
+    </div>
+    
+    <div class="constructionSystem">
+      <img src="../images/cons.jpg" alt="cons logo">
+      <h2 style=text-align:center>What are the benefits in Nova Construction</h2>
+    <ul>
+      <li>Project Planning and Scheduling</li>
+      <li>Cost Estimation and Budgeting</li>
+      <li>Document Management</li>
+      <li>Communication and Collaboration</li>
+      <li>Risk Management</li>
+      <li>Client and Stakeholder Communication</li>
+      <li>Safety Management</li>
+      <li>Reporting and Analytics</li>
+    </ul>
+    </div>
+
+    <footer>
+      <table width="30%" class="footerTable">
+        <tr>
+          <td width="20%">Contact Us,</td>
+          <td width="10%"><img src="../images/email.png" width="80%"></td>
+          <td style="white-space:nowrap; text-align: left;">novaconstructions@gmail.com</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><img src="../images/phone.png" width="55%"></td>
+          <td style="text-align: left;">+94 (70) 123 4567</td>
+        </tr>
+      </table><br>
+  
+      <table width="30%" class="footerTable footerTableHover">
+        <tr>
+          <td>Follow Us On,</td>
+          <td width="10%"><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" class="fb"></a></td>
+          <td width="10%"><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" class="insta"></a></td>
+          <td width="10%"><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" class="yt"></a></td>
+          <td width="10%"><a href="https://www.tiktok.com/en/" target="_blank"><img src="../images/tiktok.png" class="tiktok"></a></td>
+          <td width="60%"></td>
+        </tr>
+      </table><br>
+  
+      <div class="address">
+        <h2>NOVA Constructions (pvt) Ltd</h2>
+        <p>Street: 568 Havelock Road,<br>06th Lane, Colombo</p>
+      </div>
+  
+      <div class="hyperLinks">
+        <p>
+          <a href="aboutUs.html">About Us</a> |
+          <a href="contactUs.html">Contact Us</a> |
+          <a href="FAQ.html">FAQ</a> |
+          <a href="customerSupport.html">Customer Support</a> |
+          <a href="feedback.php">Customer Feedback</a>
+        </p>
+      </div>
+  
+      <div class="bottomLogo">
+        <img src="../images/logo.png">
+        <p>&copy; 2023 NOVA Constructions. All rights reserved.</p>
+      </div>
+  
+    </footer>
+    </body>
+</html>

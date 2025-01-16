@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/* body */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-color);
+  transition: 1s;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+p:hover, h1:hover, h2:hover, li:hover, td:hover {
+  cursor: default;
+}
+
+/* fonts */ 
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dark mode */
+/* made with the help of this video "https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=107s" */
+
+:root{
+  --primary-color: #e3e3e3;
+  --secondary-color: #212121;
+}
+.darkTheme {
+  --primary-color: #212121;
+  --secondary-color: #e3e3e3;
+}
+#theme {
+  width: 2.5vw;
+  position: absolute;
+  right: .5%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: .2%;
+  cursor: pointer;
+}
+
+/* header */
+
+#logo {
+  margin: 1.1%;
+  position: absolute;
+  width: 6vw;
+}
+#title {
+  position: relative;
+  margin-top: 1%;
+  margin-left: 23%;
+  margin-right: auto;
+  width: 50%;
+  filter: drop-shadow(0px 0px 2px #212121);
+}
+
+/* navigation bar */
+
+.navBarDiv {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  border-top: .1vw solid var(--secondary-color);
+  border-bottom: .1vw solid var(--secondary-color);
+}
+
+/* search bar */
+
+.search {
+  position: relative;
+  width: 14vw;
+  height: 4vh;
+  right: 4%;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+.search input {
+  position: relative;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding-left: 12%;
+  width: 100%;
+  height: 100%;
+  font-size: 1vw;
+  transition: 1s;
+  color: var(--secondary-color);
+}
+.search input::placeholder {
+  color: grey;
+  font-size: .9vw;
+}
+.search input::-ms-input-placeholder {
+  color: grey;
+}
+.search img {
+  width: .9vw;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search input[type=submit] {
+  visibility: hidden;
+}
+
+/* admin register div */
+
+.adminReg {
+    position: relative;
+    width: 35%;
+    height: fit-content;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding: 1%;
+}
+.adminReg h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2vw;
+}
+.adminReg label {
+    font-size: 1vw;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: var(--secondary-color);
+}
+input[type='text'] {
+    padding: 1%;
+    border-radius: 1vw;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin: 0 1% 1% 1%;
+    font-size: 1vw;
+}
+#lName, #username, #rPassword, #phone {
+  float: right;
+}
+.lnameLable {
+  position: relative;
+  left: 14.3vw;
+}
+.usernameLable {
+  position: relative;
+  left: 12.2vw;
+}
+.phoneLabel {
+position: relative;
+left: 16.5vw;
+}
+.rPasswordLable {
+  position: relative;
+  left: 15vw;
+}
+input[type='submit'] {
+    padding: 1%;
+    border-radius: 1vw;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin: 0 1% 1% 1%;
+    font-size: 1vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+input[type='submit']:hover {
+    transform: translate(-50%) scale(1.05);
+}
+.currentAdmins {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    left: 50%;
+    top: 27.5%;
+    padding: 1%;
+    font-size: 1vw;
+    color: var(--secondary-color);
+}
+.currentAdmins h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2vw;
+}
+.currentAdmins table {
+    width: 70%;
+}
+.currentAdmins table td {
+    padding: 1%;
+    font-size: 1vw;
+    border-collapse: collapse;
+}
+.tableHead {
+    font-weight: bold;
+}
+.currentAdmins button {
+    padding: 2%;
+    font-size: .8vw;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1vw;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+.currentAdmins button:hover {
+    transform: scale(1.05);
+}
+
+/* footer */
+
+footer {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px 5px 0px 5px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 10vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: #a3a3a3;
+  }
+  .footerTable td {
+    font-size: 105%;
+    font-size: 1vw;
+  }
+  .footerTable tr td {
+    text-align: center;
+  }
+  .footerTable td:first-child {
+    width: 1%;
+    white-space: nowrap;
+  }
+  .socials {
+    position: absolute;
+    margin-top: -2.1%;
+    margin-left: 4%;
+  }
+  .fb {
+    margin-top: 10%;
+    width: 70%;
+    border-radius: 5px;
+  }
+  .insta {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .yt {
+    margin-top: 10%;
+    width: 80%;
+  }
+  .tiktok {
+    margin-top: 10%;
+    width: 70%;
+    border-radius: 5px;
+  }
+  .footerTableHover img:hover {
+    transform: scale(110%);
+    filter: drop-shadow(0px 0px 1px #000);
+  }
+  .address {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .address h2 {
+    margin-top: 10%;
+    font-size: 1.2vw;
+  }
+  .address p {
+    font-size: 1vw;
+  }
+  .hyperLinks {
+    position: absolute;
+    font-size: .8vw;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hyperLinks p a {
+    text-decoration: none;
+    color: #737373;
+  }
+  .hyperLinks p a:hover {
+    color: #000;
+  }
+  .hyperLinks .currentFooter {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  .hyperLinks .currentFooter:hover {
+    color: var(--secondary-color);
+    cursor: default;
+  }
+  .bottomLogo {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    width: 15vw;
+    height: fit-content;
+    top: 50%;
+    transform: translate(0, -45%);
+  }
+  .bottomLogo img {
+    position: relative;
+    width: 40%;
+    bottom: 30%;
+    left: 30%;
+  }
+  .bottomLogo p {
+    position: relative;
+    font-size: .7vw;
+    text-align: center;
+    top: 72%;
+  }

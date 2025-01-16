@@ -1,0 +1,168 @@
+-- Table structure for table `admindetails`
+--
+
+CREATE TABLE `admindetails` (
+  `no` int(11) NOT NULL,
+  `fName` varchar(30) NOT NULL,
+  `lName` varchar(30) NOT NULL,
+  `bio` varchar(500) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` char(10) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `code` char(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admindetails`
+--
+
+INSERT INTO `admindetails` (`no`, `fName`, `lName`, `bio`, `address`, `email`, `phone`, `username`, `password`, `code`) VALUES
+(1, 'ASHAN', 'VIMODH', 'my name is ashan vimodh', '130/4 mahawela rd, pahalabiyanwila, kadawatha', 'ashanvimodh12@gmail.com', '0705123631', 'ashanAdmin', 'ashanAdmin123', 'AD111'),
+(2, 'Chethika', 'Indi', 'my name is chethi', 'Pannipitiya', 'chethikawijethunga@gmail.com', '0757378784', 'chethikaIndi', 'Chethi1234', 'AD111');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customersupport`
+--
+
+CREATE TABLE `customersupport` (
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `priority` varchar(10) NOT NULL,
+  `description` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `customersupport`
+--
+
+INSERT INTO `customersupport` (`id`, `email`, `priority`, `description`) VALUES
+(1, 'ashanvimodh12@gmail.com', 'high', 'hehe'),
+(2, 'chethikawijethunga@gmail.com', 'medium', 'hehehe');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employeedetails`
+--
+
+CREATE TABLE `employeedetails` (
+  `no` int(11) NOT NULL,
+  `fName` varchar(30) NOT NULL,
+  `lName` varchar(30) NOT NULL,
+  `bio` varchar(500) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` char(10) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `code` char(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `employeedetails`
+--
+
+INSERT INTO `employeedetails` (`no`, `fName`, `lName`, `bio`, `address`, `email`, `phone`, `username`, `password`, `code`) VALUES
+(1, 'Ashan', 'Vimodh', 'hello', '', 'ashanvimodh12@gmail.com', '0705123631', 'ashan12', 'asAS1234', 'AD000'),
+(5, 'chethika', 'wijethunga', '', '', 'chethikawijethunga@gmail.com', '0757378784', 'chethikaIndi', 'Chethi123', 'AD111');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `fName` varchar(20) NOT NULL,
+  `lName` varchar(20) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Text` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE `register` (
+  `no` int(11) NOT NULL,
+  `fName` varchar(30) NOT NULL,
+  `lName` varchar(30) NOT NULL,
+  `gender` varchar(7) NOT NULL,
+  `dob` date NOT NULL,
+  `bio` varchar(500) NOT NULL,
+  `address` varchar(300) NOT NULL,
+  `country` varchar(50) NOT NULL,
+  `mobileNo` char(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`no`, `fName`, `lName`, `gender`, `dob`, `bio`, `address`, `country`, `mobileNo`, `email`, `password`) VALUES
+(1, 'Tharusha', 'Apsal', 'Male', '2002-05-12', '', '130/4 mahawela', 'sri lanka', '0705123631', 'ashanvimodh12@gmail.com', 'asAS1234'),
+(2, 'Chethika', 'Wijethunga', 'Female', '2002-02-18', '', '130/4 mahawela', 'sri lanka', '0757378784', 'chethikawijethunga@gmail.com', 'chethiW123');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admindetails`
+--
+ALTER TABLE `admindetails`
+  ADD PRIMARY KEY (`no`);
+
+--
+-- Indexes for table `customersupport`
+--
+ALTER TABLE `customersupport`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `employeedetails`
+--
+ALTER TABLE `employeedetails`
+  ADD PRIMARY KEY (`no`);
+
+--
+-- Indexes for table `register`
+--
+ALTER TABLE `register`
+  ADD PRIMARY KEY (`no`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admindetails`
+--
+ALTER TABLE `admindetails`
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `customersupport`
+--
+ALTER TABLE `customersupport`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `employeedetails`
+--
+ALTER TABLE `employeedetails`
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `register`
+--
+ALTER TABLE `register`
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
